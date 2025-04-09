@@ -128,7 +128,7 @@ function Home() {
           </div>
           <div className="">
             <div className="img-container z-2">
-              <img src={ImgJean} className="img-jean img-fluid" alt="Jean" />
+              <img src={ImgJean} className="img-jean img-fluid" alt="Jean Rose Prayco" />
             </div>
             <div className="img-border"></div>
             <div className="img-border-5"></div>
