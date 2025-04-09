@@ -30,13 +30,13 @@ function project() {
       }, []);
       
   return (
-    <div className="p-0 m-0 vh-100 bg-dark-red">
+    <div className="p-0 m-0 bg-dark-red">
       <div className="p-2 fs-4 text-center text-mocha text-center">
         Projects
       </div>
       <div className="fs-1 fw-bold text-mocha text-center">My Works</div>
-      <div className="row m-0 p-5 vh-70 m-0">
-        <div className="col-4 m-0 p-1">
+      <div className="row m-0 p-5 m-0 d-flex justify-content-center">
+        <div className="col-lg-4 col-md-6 col-sm-12 col-12 m-0 p-1">
           <div className="project-container">
             <div className="project-img-container reveal ">
               <div className="p-1">
@@ -70,7 +70,7 @@ function project() {
             </div>
           </div>
         </div>
-        <div className="col-4 m-0 p-1">
+        <div className="col-lg-4 col-md-6 col-sm-12 col-12 m-0 p-1">
           <div className="project-container">
             <div className="project-img-container reveal">
               <div className="p-1">
@@ -113,7 +113,7 @@ function project() {
             </div>
           </div>
         </div>
-        <div className="col-4 m-0 p-1">
+        <div className="col-lg-4 col-md-6 col-sm-12 col-12 m-0 p-1">
           <div className="project-container">
             <div className="project-img-container reveal">
               <div className="p-1">

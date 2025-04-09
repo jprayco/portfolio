@@ -1,15 +1,41 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 function contact() {
-  return (
-    <div className="row p-0 m-0 vh-100 bg-dark-green">
-      <div>
-        <div className="fs-4 text-center text-mocha text-center">Contact</div>
-        <div className="fs-1 fw-bold text-mocha text-center">Get in Touch</div>
-      </div>
+  
+  useEffect(() => {
+    function reveal() {
+      const reveals = document.querySelectorAll(".reveal");
 
-      <div className=" p-0 m-0 text-mocha ">
-        <div className=" d-flex justify-content-center">
+      reveals.forEach((element) => {
+        const windowHeight = window.innerHeight;
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 100;
+
+        if (elementTop < windowHeight - elementVisible) {
+          element.classList.add("active");
+        } else {
+          element.classList.remove("active");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", reveal);
+    reveal(); // Run once on mount
+
+    return () => {
+      window.removeEventListener("scroll", reveal);
+    };
+  }, []);
+
+  return (
+    <div className="row p-0 m-0 bg-dark-green">
+      {/* <div>
+        <div className="fs-4 text-center text-mocha text-center"></div>
+        <div className="fs-1 fw-bold text-mocha text-center">Get in Touch</div>
+      </div> */}
+
+      <div className=" p-0 m-0 text-mocha">
+       {/*  <div className=" d-flex justify-content-center">
           <form>
             <div className="form-group">
               <div>
@@ -62,28 +88,28 @@ function contact() {
               </button>
             </div>
           </form>
-        </div>
+        </div> */}
 
-        <div className="d-flex align-items-center bg-dark-violet justify-content-center mt-3 p-4">
-          <div className="d-flex p-2">
+        <div className="d-flex align-items-center justify-content-center mt-3 p-4 row">
+          <div className="d-flex p-2 col-lg-3 col-md-3 col-sm-6 col-6 justify-content-center">
             <div className=" ">
               <i class="bi bi-telephone-fill px-2"></i>
             </div>
             <div className="px-2">+639051028936</div>
           </div>
-          <div className="d-flex p-2">
+          <div className="d-flex p-2 col-lg-3 col-md-3 col-sm-6 col-6 justify-content-center">
             <div className="">
               <i class="bi bi-envelope-at-fill px-2"></i>
             </div>
             <div className="px-2">praycojean25@gmail.com</div>
           </div>
-          <div className="d-flex p-2">
+          <div className="d-flex p-2 col-lg-3 col-md-3 col-sm-6 col-6 justify-content-center">
             <div className="">
               <i class="bi bi-linkedin px-2"></i>
             </div>
             <a className="px-2 a-tag" href="https://www.linkedin.com/in/jean-rose-prayco-53b0ab193/" target="_blank">Jean Rose Prayco</a>
           </div>
-          <div className="d-flex p-2">
+          <div className="d-flex p-2 col-lg-3 col-md-3 col-sm-6 col-6 justify-content-center">
             <div className="">
               <i class="bi bi-facebook px-2"></i>
             </div>
@@ -92,7 +118,7 @@ function contact() {
         </div>
 
         <div className="bg-mocha d-flex justify-content-center text-black p-3">
-          <div>Created By <span className="fw-bold">JeanRosePrayco</span>  | <i class="bi bi-c-circle"></i> 2024 All right reserved.</div>
+          <div>Created By <span className="fw-bold">JeanRosePrayco</span>  | <i class="bi bi-c-circle"></i> 2025 All right reserved.</div>
         </div>
       </div>
     </div>

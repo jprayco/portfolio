@@ -100,40 +100,43 @@ function Home() {
   };
 
   return (
-    <div>
-      <div className="row p-0 m-0 vh-100">
-        <div className="col-8 bg-dark-violet d-flex justify-content-center align-items-center p-0 m-0">
-          <div
-            id="particles-container"
-            className="vh-100 position-absolute z-1"
-          ></div>
-          <div className="col-8 text-white z-2">
-            <h1 className="fs-50 text-container-1">Hi! I'm Jean</h1>
-            <h2 className="text-container-2">
-              I'm <span className="text-teal">CLOUD ENGINEER</span>{" "}
-              <span className="fs-02">at Ogis Ph</span>
-            </h2>
-            <p className="fs-02 text-container-3">
-              Passionate about Web Development, and I want to pursue
-            </p>
-            <p className="fs-02 text-container-4">
-              a career as a WEB DEVELOPER.
-            </p>
-            <div className="col-3">
-              <div className="btn-container">
-                <button className="z-3 btn-cv">Download CV</button>
+    <div className="m-0 p-0">
+      <div id="particles-container" className="vh-100 z-1 particles"></div>
+      <div className="row p-0 m-0 vh-100 w-100 flex-lg-row flex-md-column-reverse flex-sm-column-reverse flex-column-reverse">
+        <div className="col-lg-8 col-12 bg-dark-violet d-flex justify-content-center p-0 m-0 h-lg-50 ">
+          <div className="col-xl-8 col-lg-10 col-md-10 col-sm-10 col-12 text-white z-2 container-md">
+            <div>
+              <h1 className="fs-50 text-container-1">Hi! I'm Jean</h1>
+              <h2 className="text-container-2">
+                I'm <span className="text-teal">CLOUD ENGINEER</span>{" "}
+                <span className="fs-02">at Ogis Ph</span>
+              </h2>
+              <p className="fs-02 text-container-3">
+                Passionate about Web Development, and I want to pursue
+              </p>
+              <p className="fs-02 text-container-4">
+                a career as a WEB DEVELOPER.
+              </p>
+              <div className="btn-parent-container">
+                <div className="w-10">
+                  <div className="btn-container">
+                    <button className="z-3 btn-cv">Download CV</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div className="img-container z-2">
-            <img src={ImgJean} className="img-jean" alt="Jean" />
+          <div className="">
+            <div className="img-container z-2">
+              <img src={ImgJean} className="img-jean img-fluid" alt="Jean" />
+            </div>
+            <div className="img-border"></div>
+            <div className="img-border-5"></div>
           </div>
-          <div className="img-border"></div>
-          <div className="img-border-5"></div>
         </div>
-        <div className="col-4 bg-mocha p-0 m-0">
-          <div className="d-flex justify-content-end vh-98 align-items-center p-1">
-            <div className="position-fixed z-3">
+        <div className="col-lg-4 col-12 bg-mocha p-0 m-0">
+          <div className="">
+            <div className="nav-parent-container d-lg-block d-md-flex d-flex z-3">
               <div className="nav-container">
                 <div className="">
                   <button
@@ -189,7 +192,7 @@ function Home() {
                   </button>
                 </div>
               </div>
-
+              {/* 
               <div className="nav-container">
                 <div className="">
                   <button
@@ -202,7 +205,7 @@ function Home() {
                     </div>
                   </button>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
