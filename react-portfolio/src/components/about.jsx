@@ -45,12 +45,15 @@ function about() {
                     <div className="h-40 about-border-bottom d-flex align-items-end">
                       <div className="grad-date-container">
                         <div className="grad-date">
-                          <p className="grad-year p-0 m-0">
+                        <div>
+                        <p className="grad-year p-0 m-0">
                             Intern at Technomancer Inc
                           </p>
                           <small className="m-0 p-0">
                             February 2023 - May 2023
                           </small>
+                        </div>
+                          
                         </div>
                       </div>
                     </div>
@@ -100,12 +103,15 @@ function about() {
                     <div className="h-40 about-border-bottom  d-flex align-items-end">
                       <div className="grad-date-container">
                         <div className="grad-date">
-                          <p className="grad-year p-0 m-0">
+                        <div>
+                        <p className="grad-year p-0 m-0">
                             Software QA at Technomancer
                           </p>
                           <small className="m-0 p-0">
                             June 2023 - March 2024
                           </small>
+                        </div>
+                        
                         </div>
                       </div>
                     </div>
@@ -219,7 +225,7 @@ function about() {
                           June 2023 - March 2024
                         </small>
                       </div>
-                        
+                       
                       </div>
                     </div>
                   </div>
@@ -276,7 +282,7 @@ function about() {
                           February 2023 - May 2023
                         </small>
                       </div>
-                        
+                 
                       </div>
                     </div>
                   </div>
