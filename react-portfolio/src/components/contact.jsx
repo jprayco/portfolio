@@ -90,26 +90,26 @@ function contact() {
           </form>
         </div> */}
 
-        <div className="d-flex align-items-center justify-content-center mt-3 p-4 row">
-          <div className="d-flex p-2 col-lg-3 col-md-3 col-sm-6 col-6 justify-content-center">
+        <div className="d-flex align-items-center justify-content-center mt-3 p-4 row m-0 p-0">
+          <div className="d-flex p-2 col-lg-3 col-md-3 col-sm-6 col-12 m-0 p-0 justify-content-center">
             <div className=" ">
               <i class="bi bi-telephone-fill px-2"></i>
             </div>
             <div className="px-2">+639051028936</div>
           </div>
-          <div className="d-flex p-2 col-lg-3 col-md-3 col-sm-6 col-6 justify-content-center">
+          <div className="d-flex p-2 col-lg-3 col-md-3 col-sm-6 col-12 m-0 p-0 justify-content-center">
             <div className="">
               <i class="bi bi-envelope-at-fill px-2"></i>
             </div>
             <div className="px-2">praycojean25@gmail.com</div>
           </div>
-          <div className="d-flex p-2 col-lg-3 col-md-3 col-sm-6 col-6 justify-content-center">
+          <div className="d-flex p-2 col-lg-3 col-md-3 col-sm-6 col-12 m-0 p-0 justify-content-center">
             <div className="">
               <i class="bi bi-linkedin px-2"></i>
             </div>
             <a className="px-2 a-tag" href="https://www.linkedin.com/in/jean-rose-prayco-53b0ab193/" target="_blank">Jean Rose Prayco</a>
           </div>
-          <div className="d-flex p-2 col-lg-3 col-md-3 col-sm-6 col-6 justify-content-center">
+          <div className="d-flex p-2 col-lg-3 col-md-3 col-sm-6 col-12 m-0 p-0 justify-content-center">
             <div className="">
               <i class="bi bi-facebook px-2"></i>
             </div>
